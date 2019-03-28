@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         radioGroup.setOnCheckedChangeListener(this);
         tx_channel = (RadioButton) findViewById(R.id.tab_bar_channel);
         tx_channel.setChecked(true);
-        System.out.println("zhegeshishenmm");
+        System.out.println("fdfd");
+        int i= 0;
     }
 
     @Override
