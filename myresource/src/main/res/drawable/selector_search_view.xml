@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <selector
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--布尔值。true表示当前控件出于可用的状态。比如可以被点击-->
+        <item android:state_enabled="false" >
+            <shape android:shape="rectangle">
+                <corners android:radius="8dp" />
+                <solid android:color="#eb4f38" />
+            </shape>
+        </item>
+    <!--布尔值。true指当用户点击或者触摸该控件的状态。默认为false；一般用于设置按钮颜色/图片的设置。-->
+        <item android:state_pressed="true">
+            <shape android:shape="rectangle">
+                <corners android:radius="8dp" />
+                <solid android:color="#eb4f38" />
+            </shape>
+        </item>
+        <item>
+            <shape android:shape="rectangle">
+                <corners android:radius="8dp" />
+                <solid android:color="#D82917" />
+            </shape>
+        </item>
+    </selector>

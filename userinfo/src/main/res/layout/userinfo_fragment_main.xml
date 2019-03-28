@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <gx.com.common.MyToolBar.EnjoyshopToolBar
+        android:id="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:isShowLeftIcon="false"
+        app:isShowSearchView="false"
+        app:isShowWeakIcon="false"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        />
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="个人信息页"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />-->
+    <gx.com.common.PageMenu.PageMenuLayout
+        android:id="@+id/pagemenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pagemenu_row_count="2"
+        app:pagemenu_span_count="4"/>
+
+    <gx.com.userinfo.widget.IndicatorView
+        android:id="@+id/main_home_entrance_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="16dp"
+        app:gravity="0"
+        app:indicatorColor="#668b8989"
+        app:indicatorColorSelected="#FF5722"
+        app:indicatorWidth="6"/>
+
+</LinearLayout>

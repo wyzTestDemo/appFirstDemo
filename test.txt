@@ -1,0 +1,16 @@
+implement
+概念 : 将该依赖隐藏在内部，而不对外部公开。
+
+理解 : 在 app mudule 中使用 implement 依赖的第三方库, 在其他 mudule 是无法调用的.
+
+举例 : 此时项目中有一个 mudule 是 ImageLoader ,其内部用 implement 指令依赖了 glide 这个库, 那么此时我们在 app mudule 中无法调用 glide 库中的方法.
+
+compile
+概念: android studio 3.0 版本后废弃该指令 改用 api 代替, api 完全等同于之前的 compile 指令, 也就是普通的依赖, 第三方库在 mudule 中依赖后其他 mudule 都可以使用该库.
+
+官方推荐在不影响的前提下优先使用 implement 指令依赖
+---------------------
+作者：geekqian
+来源：CSDN
+原文：https://blog.csdn.net/geekqian/article/details/79500428
+版权声明：本文为博主原创文章，转载请附上博文链接！

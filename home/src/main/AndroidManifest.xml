@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gx.com.home">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <application>
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name="gx.com.common.MyQR.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/fullscreen" />
+    </application>
+</manifest>
